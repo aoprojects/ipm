@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
  
+  resources :properties
+  resources :properties
   devise_for :users
   root "pages#home"
   get "about" => "pages#about"
