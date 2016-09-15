@@ -14,10 +14,16 @@ $navbar-default-toggle-hover-bg: none;
 @import 'bootstrap';
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
+footer {
+	border-top: 1px solid gray;
+	padding: 20px;
+	margin: 20px;
+}
+
 h1 {
-	color: red;
+
 }
 
 main {
-	margin-top: 20px;
+
 }
