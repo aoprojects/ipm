@@ -1,1 +1,26 @@
-my_account.html.erb
+<h1><%= current_user.user_id %>  TODO - Your Account</h1>
+
+<p>My matches (<%= current_user.properties.count %>)</p>
+<ol>
+	<% if current_user.properties.any? %>
+		<li></li>
+	<% else %>
+		<p>You have not created any search criteria.</p>
+		<button class="btn btn-success"><%= link_to "New Search", new_search_criterium_path %></button>
+	<% end %>
+</ol>
+
+<p>My search criteria (<%= current_user.search_criteria.count %>)</p>
+
+<ol>
+	<% if current_user.search_criteria.any? %>
+		<li></li>
+	<% else %>
+		<p>You have not created any search criteria.</p>
+		<button class="btn btn-success"><%= link_to "New Search", new_search_criterium_path %></button>
+	<% end %>
+</ol>
+
+<p>My listed properties</p>
+
+<p>Account Info | Security</p>
