@@ -3,7 +3,12 @@ Project by Alison Ostendorf
 team@virgoventures.org
 Project name: Investment Property Matchmaker
 */
-$dropdown-link-active-color: #86765F;
+$transparent-white: rgba(255,255,255,0.9);
+$navbar-default-bg: $transparent-white;
+$navbar-default-toggle-border-color: $transparent-white;
+$navbar-default-toggle-icon-bar-bg: blue;
+$navbar-default-color: blue;
+$navbar-default-toggle-hover-bg: none;
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
