@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
  
+  resources :search_criteria
   resources :properties
   resources :properties
   devise_for :users

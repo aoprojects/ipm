@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  search_street_address: MyString
+  search_city: MyString
+  search_state: MyString
+  search_county: MyString
+  search_country: MyString
+  search_property_type: MyString
+  search_off_market: MyString
+  search_finished_sq_ft_max: 1
+  search_finished_sq_ft_min: 1
+  asking_price_min: 1
+  asking_price_max: 1
+  search_ideal_financing_method: MyString
+  search_deal_type: MyString
+  search_condition: MyString
+  user_id: 
+
+two:
+  search_street_address: MyString
+  search_city: MyString
+  search_state: MyString
+  search_county: MyString
+  search_country: MyString
+  search_property_type: MyString
+  search_off_market: MyString
+  search_finished_sq_ft_max: 1
+  search_finished_sq_ft_min: 1
+  asking_price_min: 1
+  asking_price_max: 1
+  search_ideal_financing_method: MyString
+  search_deal_type: MyString
+  search_condition: MyString
+  user_id: 

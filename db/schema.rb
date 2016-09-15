@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160914214943) do
+ActiveRecord::Schema.define(version: 20160915025604) do
 
   create_table "properties", force: :cascade do |t|
     t.string   "street_address"
@@ -40,6 +40,28 @@ ActiveRecord::Schema.define(version: 20160914214943) do
   end
 
   add_index "properties", ["user_id"], name: "index_properties_on_user_id"
+
+  create_table "search_criteria", force: :cascade do |t|
+    t.string   "search_street_address"
+    t.string   "search_city"
+    t.string   "search_state"
+    t.string   "search_county"
+    t.string   "search_country"
+    t.string   "search_property_type"
+    t.boolean  "search_off_market"
+    t.integer  "search_finished_sq_ft_max"
+    t.integer  "search_finished_sq_ft_min"
+    t.integer  "asking_price_min"
+    t.integer  "asking_price_max"
+    t.string   "search_ideal_financing_method"
+    t.string   "search_deal_type"
+    t.string   "search_condition"
+    t.integer  "user_id"
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+  end
+
+  add_index "search_criteria", ["user_id"], name: "index_search_criteria_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
