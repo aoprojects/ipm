@@ -1,0 +1,109 @@
+<%= form_for(@property) do |p| %>
+	<% if @property.errors.any? %>
+		<div id="error_explanation">
+	      <h2><%= pluralize(@property.errors.count, "error") %> prohibited this property from being saved:</h2>
+
+	      <ul>
+	      <% @property.errors.full_messages.each do |message| %>
+	        <li><%= message %></li>
+	      <% end %>
+	      </ul>
+	    </div>
+	 <% end %>
+
+	<div class="row">
+        
+        <div class="col-sm-6 col-xs-12 align-center">
+          <div class="field">
+            <p><%= p.label :Street_address %></p>
+            <%= p.text_field :street_address, class: 'form-control', placeholder: '123 Main St.' %>
+          </div><!-- end field -->
+        </div><!-- end col -->
+
+        <div class="col-sm-6 col-xs-12 align-center">
+          <div class="field">
+            <p><%= p.label :Apartment_or_suite %></p>
+            <%= p.text_field :street_address_2, class: 'form-control', placeholder: 'Apt 6' %>
+          </div><!-- end field -->
+        </div><!-- end col -->
+        <div class="col-sm-6 col-xs-12 align-center">
+          <div class="field">
+            <p><%= p.label :City %></p>
+            <%= p.text_field :city, class: 'form-control', placeholder: 'Long Island City' %>
+          </div><!-- end field -->
+        </div><!-- end col -->
+        <div class="col-sm-6 col-xs-12 align-center">
+          <div class="field">
+            <p><%= p.label :US_State %></p>
+            <%= p.text_field :state, class: 'form-control', placeholder: 'New York' %>
+          </div><!-- end field -->
+        </div><!-- end col -->
+        <div class="col-sm-6 col-xs-12 align-center">
+          <div class="field">
+            <p><%= p.label :County %></p>
+            <%= p.text_field :county, class: 'form-control', placeholder: 'Queens' %>
+          </div><!-- end field -->
+        </div><!-- end col -->
+        <div class="col-sm-6 col-xs-12 align-center">
+          <div class="field">
+            <p><%= p.label :Property_type %></p>
+            <%= p.text_field :property_type, class: 'form-control', placeholder: 'Multifamily - 4 family' %>
+          </div><!-- end field -->
+        </div><!-- end col -->
+        <!-- todo insert off market boolean field -->
+        <!-- add direct to owner boolean -->
+        <!-- insert finished sq ft interger field -->
+        <div class="col-sm-6 col-xs-12 align-center">
+          <div class="field">
+            <p><%= p.label :Condition %></p>
+            <%= p.text_field :condition, class: 'form-control', placeholder: 'Gut renovation needed' %>
+          </div><!-- end field -->
+        </div><!-- end col -->
+        <div class="col-sm-6 col-xs-12 align-center">
+          <div class="field">
+            <p><%= p.label :Deal_type_recommended %></p>
+            <%= p.text_field :deal_type, class: 'form-control', placeholder: 'Fix and flip' %>
+          </div><!-- end field -->
+        </div><!-- end col -->
+        <!-- todo insert asking price integer -->
+        <!-- todo insert negotiable - change this to drop down selector from boolean -->
+        <div class="col-sm-6 col-xs-12 align-center">
+          <div class="field">
+            <p><%= p.label :Financing_method_preferred %></p>
+            <%= p.text_field :ideal_financing_method, class: 'form-control', placeholder: 'All cash' %>
+          </div><!-- end field -->
+        </div><!-- end col -->
+          <!-- todo add financial summary text area, maybe use markdown here?? -->
+          <!-- todo insert projected profit integer and currency -->
+        <div class="col-sm-6 col-xs-12 align-center">
+          <div class="field">
+            <p><%= p.label :Property_access %></p>
+            <%= p.text_field :property_access, class: 'form-control', placeholder: 'Lockbox, code available upon request' %>
+          </div><!-- end field -->
+        </div><!-- end col -->
+        <!-- todo insert additional details text area and maybe user markdown -->
+        <div class="col-sm-6 col-xs-12 align-center">
+          <div class="field">
+            <p><%= p.label :Preferred_contact_details %></p>
+            <%= p.text_field :preferred_contact_details, class: 'form-control', placeholder: 'Email us at seller@properties.com' %>
+          </div><!-- end field -->
+        </div><!-- end col -->
+        <div class="col-sm-6 col-xs-12 align-center">
+          <div class="field">
+            <p><%= p.label :Also_listed_on %></p>
+            <%= p.text_field :also_listed_on, class: 'form-control', placeholder: 'Trulia, at this link' %>
+          </div><!-- end field -->
+        </div><!-- end col -->
+
+        <br>
+	    <div class="align-center-important">
+	      <%= p.submit "Save Property", class: 'btn btn-success btn-md'%>
+	    </div>
+
+
+
+
+
+    </div><!-- end .row -->
+
+<% end %>
