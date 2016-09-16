@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160916160758) do
+ActiveRecord::Schema.define(version: 20160916162836) do
 
   create_table "properties", force: :cascade do |t|
     t.string   "street_address"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20160916160758) do
     t.datetime "updated_at",                null: false
     t.boolean  "direct_to_owner"
     t.string   "deal_status"
+    t.date     "date_sold"
   end
 
   add_index "properties", ["user_id"], name: "index_properties_on_user_id"
