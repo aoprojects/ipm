@@ -10,7 +10,7 @@ CONDITION = ["Land only / empty lot",
 		"Cosmetic work needed", 
 		"Partially upgraded - property in various stages",
 		"Rent ready - basic rental", 
-		"Rent ready - moderately upgraded"
+		"Rent ready - moderately upgraded",
 		"Rent ready - luxury",
 		"Turn key - already renovated and rented",
 		"Other"
