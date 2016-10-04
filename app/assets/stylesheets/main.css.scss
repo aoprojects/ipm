@@ -4,18 +4,30 @@ team@virgoventures.org
 Project name: Investment Property Matchmaker
 */
 
-$blue: blue;
+$main-color: green;
 $transparent-white: rgba(255,255,255,0.9);
 $navbar-default-bg: $transparent-white;
 $navbar-default-toggle-border-color: $transparent-white;
-$navbar-default-toggle-icon-bar-bg: $blue;
-$navbar-default-color: $blue;
+$navbar-default-toggle-icon-bar-bg: $main-color;
+$navbar-default-color: $main-color;
 $navbar-default-toggle-hover-bg: none;
 
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+
+
+a {
+	color: $main-color;
+}
+
+a:hover {
+	color: darken($main-color, 10%);
+	text-decoration: none;
+	font-weight: 500;
+	transition: 0.1s ease-in;
+}
 
 .btn {
 	margin: 20px;
@@ -33,13 +45,19 @@ h1 {
 }
 
 h2 {
-	color: $blue;
+	color: $main-color;
 }
 
 .logo {
 	width: 60px;
 	height: 60px;
 	padding: 8px;
+}
+
+.logo-footer {
+	width: 80px;
+	height: 80px;
+	padding: 8px;	
 }
 
 main {

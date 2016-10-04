@@ -1,8 +1,8 @@
-<footer>
+<footer class="text-center">
 	<div class="container">
 
 
-			<p class="text-left">Investment Property Matchmaker</p><br>
+			<p class="text-center">Investment Property Matchmaker</p><br>
 		<div class="row">
 			<div class="col-sm-4 col-xs-12">
 				<p><%= link_to "Privacy Policy", privacy_policy_path %></p>
@@ -17,12 +17,15 @@
 			</div><!-- end col -->
 
 			<div class="col-sm-4 col-xs-12">
-				put logo here TODO
+				<%= link_to root_path do %>
+		          	<%= image_tag('IPM_logo.gif', class: 'no-wrap logo-footer', alt: 'Investment Property Matchmaker') %>
+		          	<p class="hide">Investment Property Matchmaker</p>
+	          	<% end %>
 			</div><!-- end col -->
 			<div class="col-sm-4 col-xs-12">
 				<section class="social-media-section">
-					social media links go here<br>
-					newsletter goes here
+					<p>TODo social media links</p>
+					<p>TODO newsletter sign up</p>
 				</section>
 			</div><!-- end col -->
 		</div><!-- end .row -->
