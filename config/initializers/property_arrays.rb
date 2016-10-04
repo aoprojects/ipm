@@ -18,6 +18,18 @@ CONDITION = ["Land only / empty lot",
 
 DEAL_TYPE = ["Fix and flip", "Buy and hold", "Lease option"]
 
+PROPERTY_TYPE = ["Single family", 
+		"Multifamily Residential (2 units)",
+		"Multifamily Residential (3 units)",
+		"Multifamily Residential (4 units)",
+		"Multifamily - (5+ units)",
+		"Commercial - other",
+		"Hotel - boutique",
+		"Hotel - large",
+		"Empty Lot",
+		"Land",
+		"Other" ]
+
 NEGOTIABLE = ["Yes", "Best Offer", "Absolutley Not"]
 
 IDEAL_FINANCING_METHOD = ["All cash", "Seller financing - partial", "Seller financing - full", "Lease option", "Traditional mortgage", "Shortsale", "Other"]
